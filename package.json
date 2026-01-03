@@ -1,0 +1,25 @@
+{
+  "name": "tuitui",
+  "version": "0.0.0",
+  "type": "module",
+  "module": "index.ts",
+  "scripts": {
+    "dev": "bun run index.ts",
+    "fix": "oxfmt && oxlint --fix && tsc --noEmit",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.1.67",
+    "@opentui/react": "^0.1.67",
+    "react": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "husky": "^9.1.7",
+    "oxfmt": "^0.21.0",
+    "oxlint": "^1.36.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
